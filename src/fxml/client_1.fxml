@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="org.openjfx.controller.client.ClientController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="4.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T2008M CINEMA" textAlignment="CENTER" wrappingWidth="589.7294921875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Label layoutX="25.0" layoutY="103.0" prefHeight="40.0" text="Select a movie you want to watch">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="180.0" prefHeight="40.0" text="Pick a date">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="259.0" prefHeight="40.0" text="Pick a showtime">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choiceOfMovies" layoutX="316.0" layoutY="105.0" prefHeight="35.0" prefWidth="228.0" />
+      <DatePicker fx:id="datePicker" layoutX="316.0" layoutY="183.0" prefHeight="35.0" prefWidth="228.0" />
+      <ChoiceBox fx:id="choiceOfTime" layoutX="316.0" layoutY="261.0" prefHeight="35.0" prefWidth="228.0" />
+      <Button fx:id="buttonGoToSeating" layoutX="225.0" layoutY="342.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" text="Next" />
+      <Button onAction="#redirectHome" layoutX="25.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="Go back" />
+   </children>
+</Pane>

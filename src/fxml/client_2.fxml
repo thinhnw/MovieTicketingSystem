@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="org.openjfx.controller.client.ClientController" fx:id="paneSeating" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button onAction="#redirectToStep1" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Go back" />
+      <Text layoutX="5.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T2008M CINEMA" textAlignment="CENTER" wrappingWidth="589.7294921875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your seat" wrappingWidth="567.7294921875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" fill="DODGERBLUE" height="25.0" layoutX="25.0" layoutY="115.0" stroke="BLACK" strokeType="INSIDE" width="550.0" />
+      <Text fill="WHITE" layoutX="73.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCREEN" textAlignment="CENTER" wrappingWidth="452.6328125">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

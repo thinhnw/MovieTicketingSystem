@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="org.openjfx.controller.admin.CreateMovieController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="42.0" layoutY="64.0" prefHeight="40.0" prefWidth="165.0" text="Movie Name" textAlignment="RIGHT" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textMovieName" layoutX="230.0" layoutY="64.0" prefHeight="40.0" prefWidth="333.0" />
+      <Label layoutX="42.0" layoutY="125.0" prefHeight="40.0" prefWidth="181.0" text="Duration (in minutes)" textAlignment="RIGHT">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textMovieDuration" layoutX="230.0" layoutY="125.0" prefHeight="40.0" prefWidth="333.0" />
+      <TextArea fx:id="textMovieDescription" layoutX="230.0" layoutY="196.0" prefHeight="120.0" prefWidth="333.0" />
+      <Button onAction="#redirectBack" layoutX="42.0" layoutY="14.0" mnemonicParsing="false" text="Go Back" />
+      <Label layoutX="42.0" layoutY="196.0" prefHeight="45.0" prefWidth="147.0" text="Movie Description" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Text layoutX="230.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Movie" textAlignment="CENTER" wrappingWidth="139.7294921875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="buttonConfirm" layoutX="230.0" layoutY="340.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" text="Confirm" />
+   </children>
+</Pane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.controller.admin.AdminController">
+   <children>
+      <Text layoutX="528.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin " textAlignment="CENTER" wrappingWidth="178.5390625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TabPane fx:id="tabPane" layoutX="40.0" layoutY="77.0" prefHeight="600.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Movies">
+               <content>
+                  <TableView fx:id="tableMovies" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="columnMovieId" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="columnMovieName" prefWidth="324.0" text="Name" />
+                        <TableColumn fx:id="columnMovieDuration" prefWidth="144.0" text="Duration (min)" />
+                        <TableColumn fx:id="columnMovieDescription" prefWidth="503.0" text="Description" />
+                        <TableColumn fx:id="columnMovieEdit" prefWidth="76.0" text="Edit" />
+                        <TableColumn fx:id="columnMovieDelete" prefWidth="76.0" text="Delete" />
+                    </columns>
+                  </TableView>
+               </content>
+            </Tab>
+          <Tab text="Shows">
+               <content>
+                  <TableView fx:id="tableShows" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="columnShowId" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="columnShowMovie" prefWidth="358.0" text="Movie" />
+                        <TableColumn fx:id="columnShowTime" prefWidth="331.0" text="Showtime" />
+                        <TableColumn fx:id="columnShowDuration" prefWidth="352.0" text="Duration" />
+                        <TableColumn fx:id="columnShowDelete" prefWidth="84.0" text="Delete" />
+                    </columns>
+                  </TableView>
+               </content>
+            </Tab>
+            <Tab text="Sold Tickets">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableTickets" prefHeight="568.0" prefWidth="1200.0">
+                          <columns>
+                            <TableColumn fx:id="columnTicketId" prefWidth="75.0" text="ID" />
+                            <TableColumn fx:id="columnTicketMovie" prefWidth="319.0" text="Movie" />
+                              <TableColumn fx:id="columnTicketSeat" prefWidth="104.0" text="Seat" />
+                              <TableColumn fx:id="columnTicketShowtime" prefWidth="154.0" text="Showtime" />
+                              <TableColumn fx:id="columnTicketCustomerName" prefWidth="278.0" text="Customer's name" />
+                              <TableColumn fx:id="columnTicketCustomerPhone" prefWidth="287.0" text="Customer's phone" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="40.0" layoutY="23.0" mnemonicParsing="false" onAction="#redirectBack" prefHeight="25.0" prefWidth="179.0" text="Go Back" />
+      <Button fx:id="buttonCreateShow" layoutX="1061.0" layoutY="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="179.0" text="Create New Show" />
+      <Button fx:id="buttonCreateMovie" layoutX="855.0" layoutY="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="179.0" text="Create New Movie" />
+   </children>
+</Pane>

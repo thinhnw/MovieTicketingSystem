@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.controller.client.ClientController">
+   <children>
+      <Button layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#redirectToSeating" prefHeight="25.0" prefWidth="100.0" text="Go back" />
+      <Text layoutX="5.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchase a ticket" textAlignment="CENTER" wrappingWidth="589.65625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Label layoutX="169.0" layoutY="86.0" text="Your name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="128.0" text="Your phone number">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textCustomerName" layoutX="268.0" layoutY="83.0" />
+      <TextField fx:id="textCustomerPhone" layoutX="268.0" layoutY="125.0" />
+      <Text fx:id="textMovie" layoutX="276.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie name" wrappingWidth="187.7294921875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Label layoutX="162.0" layoutY="287.0" text="Ticket price">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="210.0" text="Seat number">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="209.0" layoutY="177.0" text="Movie">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="245.0" text="Showtime">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonPurchase" layoutX="174.0" layoutY="339.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="260.0" text="Purchase" />
+      <Text fx:id="textSeatNumber" layoutX="276.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seat number" wrappingWidth="187.7294921875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="textShowtime" layoutX="276.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Showtime xx" wrappingWidth="187.7294921875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="textPrice" layoutX="276.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="90.000VND" wrappingWidth="187.7294921875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
